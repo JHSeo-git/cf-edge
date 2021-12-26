@@ -1,0 +1,31 @@
+{
+  "name": "cf-edge",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Practice cloudflare workers. pages",
+  "main": "dist/index.js",
+  "repository": {
+    "url": "git+https://github.com/JHSeo-git/cf-edge.git",
+    "type": "git"
+  },
+  "author": {
+    "email": "qnfqnfqnf@gmail.com",
+    "name": "JHSeo"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --outDir dist",
+    "dev": "wrangler dev",
+    "dev:webpack": "yarn build && yarn wrangler dev",
+    "pub": "wrangler publish"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^3.3.0",
+    "@cloudflare/wrangler": "^1.19.6",
+    "@types/node": "^17.0.4",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "itty-router": "^2.4.8"
+  }
+}

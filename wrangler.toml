@@ -1,0 +1,13 @@
+name = "cf-edge"
+type = "webpack"
+route = ''
+zone_id = ''
+usage_model = ''
+compatibility_flags = []
+workers_dev = true
+compatibility_date = "2021-12-26"
+
+[build]
+command = "yarn install & yarn build"
+[build.upload]
+format = "service-worker"
